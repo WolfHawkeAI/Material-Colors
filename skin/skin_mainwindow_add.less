@@ -1,0 +1,30 @@
+// MD regular skin_mainwindow_add.less
+.sysbutton {
+    color: @buttonTextColor;   
+    fill: @buttonTextColor;
+    height: @baseIconSize;
+    width: @baseIconSize;
+    padding: 7px 0.8em;
+    transition: background-color @animationTime;
+    background-color: rgba(255,255,255,0);
+}
+.sysbutton:hover{
+    fill: inherit;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+}
+div[data-id="closeBtn"]:hover{
+    background-color: if(@darkTheme, rgba(255, 88, 88, 0.7), rgba(255, 66, 66, 0.7));
+}
+
+.windowheader {
+    background-color: @materialDarkColor;
+    color: @buttonTextColor;
+    fill: @buttonTextColor;    
+    min-height: @baseIconSize;
+}
+
+.windowheader .icon {
+    height: @baseIconSize;
+    width: @baseIconSize;
+}

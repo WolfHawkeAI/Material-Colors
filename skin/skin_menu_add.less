@@ -1,0 +1,45 @@
+.menuicon:not(.animCheck) {
+    width: @baseIconSize;
+    height: @baseIconSize;
+    opacity: @baseIconOpacity; 
+}
+
+.submenuicon { 
+    width: @baseIconSize;
+    height: @baseIconSize; 
+    opacity: @baseIconOpacity; 
+}
+
+.mainmenuitem[data-checked] .menutext {
+    color: @invertedColor;
+    fill: @invertedColor;
+}
+
+.menuitem {
+    // Taken from https://material.io/guidelines/components/menus.html#menus-specs
+    // Cascading menu spec  (seems to be too wide for our purposes)      
+    //height: 32px; 
+    //padding-left: 24px;
+    //padding-right: 24px;
+    min-height: @baseIconSize + @menuItemPadding;
+}
+
+.menuitem[data-checked] {
+    background-color: @accentColor;
+}
+
+.mainmenu .menuitem {
+    color: @invertedColor;   
+    padding-left: @units1_0;
+    padding-right: @units1_0;
+}
+
+.menuitem[data-checked] .menutext {
+    color: @invertedColor;
+    fill: @invertedColor;
+}
+
+.mainmenuitem:hover {
+    background-color: transparent;
+    cursor: pointer;    
+}

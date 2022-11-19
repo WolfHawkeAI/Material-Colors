@@ -1,0 +1,86 @@
+// Light theme following color consts taken from INDIGO pallete ( https://www.materialpalette.com/indigo/indigo ) - Now set in info.json
+// Dark theme:
+@baseColor: #303030; // TEXT COLOR
+@materialDarkColor: #c25e00; // DARK PRIMARY COLOR 
+@materialLightColor: #ffbd45; // LIGHT PRIMARY COLOR 
+@materialColor: #fb8c00; // PRIMARY COLOR
+@accentColor: @materialLightColor; //#536DFE; // ACCENT COLOR
+@dividerColor: #BDBDBD; // DIVIDER COLOR
+@windowBorderColor: @materialColor;
+@darkTheme: true;
+
+@baseFontSize: 13px; // given by guidelines ( https://material.io/guidelines/style/typography.html#typography-styles )
+@baseIconSize: round(@baseFontSize * 1.846); // given by guidelines ( https://material.io/guidelines/style/icons.html#icons-system-icons )
+@baseIconOpacity: 0.54; // given by material-design guidelines
+@borderRadius: 2px; 
+@tooltipBgColor: @materialDarkColor; // GREY 700 according to https://material.io/guidelines/components/tooltips.html#tooltips-tooltips-desktop
+
+
+@secondaryColor: #424242;
+@tertiaryColor: #212121;
+@hotlinkColor: fadeout(@accentColor, 35%);
+@warning2Color: @materialColor;
+@warningColor: @warning2Color;
+@controlColor: rgba(0, 0, 0, 0.0);
+@hoverColor: @warningColor;
+@hoverBg2Color: @hoverBgColor;
+@hoverBgColor: #505050;
+@contrastColor: #b8b8b8;
+@errorColor: @accentColor;
+@borderColor: @contrastColor;
+@selectedColor: #606060;
+@disabledColor: fadeout(@textColor, 35%);
+@disabledSelectedColor: desaturate(mix(@baseColor, @selectedColor, 25%), 50%);
+@headerColor: @tertiaryColor;
+@highlightColor: @warningColor;
+@highlightBgColor: fadeout(@accentColor, 35%);
+@invertedColor: white;
+@invertedSecondaryColor: #b0b0b0;
+@shadowColor: @hoverBgColor;
+
+@windowHeaderHeight: @baseIconSize + (2 * @toolButtonPadding);
+
+@font-face { font-family: Roboto; src: url("/skin/fonts/Roboto-Regular.ttf"); }
+@font-face { font-family: Roboto; src: url("/skin/fonts/Roboto-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: Roboto; src: url("/skin/fonts/Roboto-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: Roboto; src: url("/skin/fonts/Roboto-Italic.ttf"); font-style: italic; }
+
+// colors used for selection icons
+@selectedBgColor: @tertiaryColor;
+@selectedBgColorR: fade(@selectedBgColor, 85%); // for rows
+@selectedHoverColor: mix(@selectedBgColor, @hoverColor);
+
+// buttonTextColor is black for light theme and white for dark theme
+@buttonTextColor: @textColor;
+
+body {
+    font-family: Roboto;
+}
+
+.sidePanel {
+    background-color: @secondaryColor;
+}
+
+.verticalPanel {
+	.sidePanel;
+}
+
+.verticalPanel .transparentBackground {
+    background-color: fadeout(@secondaryColor, @transparentFadeout);
+}
+
+.verticalPanelNarrow {
+	.sidePanel;
+}
+
+/* // LS: Currently the left and right sidebars are not always layers over the middle content, we should add the shadows once they become a layers    
+[data-id=sidebar] {   
+    z-index: 9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); // left panel
+}
+
+[data-id=nowplaying] {   
+    z-index: 9;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15); // right panel
+}
+*/

@@ -1,0 +1,83 @@
+//  https://material.io/guidelines/components/buttons.html
+
+@buttonShadow: 0 0 8px rgba(0,0,0,.4); 
+
+.button:not([data-no-button]) {
+    background: @materialColor;
+    color: @buttonTextColor;
+    font-size: @units1_0;
+    border-radius: 2px;      
+    border: 0px; 
+    text-transform: uppercase;
+    box-shadow: @buttonShadow;    
+}
+
+.button[data-disabled]:not([data-no-button]) {
+    color: @disabledColor;
+    background: desaturate(if((@darkTheme), @secondaryColor, @materialColor), 100%);
+}
+
+.button:hover:not([data-disabled]):not([data-no-button]) {
+    cursor: pointer;
+    background: @materialColor;
+    color: if((@darkTheme), inherit, @baseColor);
+}
+
+.button:hover:not([data-disabled]):not([data-default]), 
+.button:not([data-disabled]):not([data-default]) {
+    background: if(@darkTheme, @secondaryColor, @baseColor);
+    color: if(@darkTheme, @textColor, @materialColor);
+}
+
+.buttons .button {      
+    padding: 0px 16px;
+    line-height: 32px;
+    min-width: 64px;
+}
+
+.toolButtonSize {
+    width: @baseIconSize;
+    height: @baseIconSize;
+}
+
+.toolButtonSizeLarger {
+    width: @baseIconSize;
+    height: @baseIconSize;
+}
+
+.toolbutton[data-disabled] {
+    opacity: @baseIconOpacity;
+    fill: @disabledColor;
+}
+
+.toolbuttonbase {    
+    &:hover:not([data-disabled]), &:hover:not([data-disabled]) label, &:hover .ratingStar {
+        color: inherit !important;
+        -webkit-filter: inherit;
+        cursor: pointer;
+    }
+}
+
+.lvHeaderSingleItem .toolbutton { // for butons inside LV single line header
+    padding: 0;
+    margin: 0;
+    .toolButtonSize;
+}
+
+.searchBox .toolbutton {
+    &:hover {
+        fill: @textColor
+    };
+    fill: @textColor
+}
+
+[data-id=toolbuttons] {
+    background-color: @materialColor;
+    z-index: 200;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26); // app bar
+}
+
+[data-id=toolbuttons] > * {
+    color: @buttonTextColor;
+    fill: @buttonTextColor;
+}

@@ -1,0 +1,44 @@
+.tabs[data-mainTabs] {
+    background-color: @highlightColor;
+	color: @invertedColor;
+	fill: @invertedColor;
+}
+
+@tabsBorderSize: 2px;
+
+.tabs[data-mainTabs] .tabsHeaders {
+    background-color: @materialDarkColor;
+    border-bottom: if(@darkTheme, inherit, @tabsBorderSize solid @materialColor);
+    
+    height: 100%;
+    align-items: stretch;
+    .fill;
+    .flex;
+}
+
+.tabs[data-mainTabs] .tabsHeader {
+    &[data-selected] {
+       background-color: @materialDarkColor;
+       color: @invertedColor;
+	   fill: @invertedColor;
+       border-bottom: @tabsBorderSize solid if(@darkTheme, @textColor, @baseColor);
+    }
+}
+
+.tabsHeader[data-selected] {
+    border-bottom: @tabsBorderSize solid @highlightColor;
+}
+
+.tabs[data-mainTabs] .tabsHeader:hover, .tabs[data-mainTabs] .tabsHeader:hover[data-selected] {
+    background: @materialDarkColor;
+    opacity: 1;
+}
+
+.tabs_container {
+    background-color: @materialDarkColor;
+}
+
+.switcher .tabsHeader {
+    padding: @units0_4;
+    margin-top: @units0_2;
+}

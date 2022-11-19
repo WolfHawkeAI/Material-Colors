@@ -1,0 +1,34 @@
+.left-indent {
+    margin-left: @baseIconSize;
+}
+
+.grindEdge {
+    border-radius: 0px;
+}
+
+.flex.row > .splitter {
+	margin-right: -@defaultMargin; /* results in a transparent, but well working splitter */
+}
+
+.flex.column > .splitter {
+	margin-bottom: -@defaultMargin;
+}
+
+.fieldHeading { // field headings in Properties dialog
+    .smallText;
+}
+
+.largeText, h2 {
+    // 'Title' (medium 20sp) for English and English-like scripts : https://material.io/guidelines/style/typography.html#typography-styles
+    font-weight: 500;
+    opacity: 0.87;    
+    font-size: 20px;
+}
+
+.hoverHighlight {   
+    cursor: pointer;
+    &:hover {
+        color: inherit !important;
+        fill: inherit !important;
+    }
+}

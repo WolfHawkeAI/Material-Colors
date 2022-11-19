@@ -1,0 +1,73 @@
+{
+    "title": "Material Design",
+    "id": "Material Design",
+    "description": "Default skin based on Material Design.",
+    "version": "1.0.0",
+    "type": "skin",
+    "author": "Ventis Media, Inc.",
+    "icon": "thumb.png",
+    "skin_options": [
+        {
+            "type": "radio",
+            "default": "dark",
+            "title": "Theme",
+            "options": {
+                "dark": {
+                    "title": "Dark",
+                    "variables": {
+                        "darkTheme": "true",
+                        "baseColor": "",
+                        "materialDarkColor": "",
+                        "materialLightColor": "",
+                        "materialColor": "",
+                        "accentColor": "",
+                        "windowBorderColor": "",
+                        "tooltipBgColor": "",
+                        "secondaryColor": "",
+                        "tertiaryColor": "",
+                        "hotlinkColor": "",
+                        "hoverBgColor": "",
+                        "contrastColor": "",
+                        "borderColor": "",
+                        "selectedColor": "",
+                        "disabledColor": "",
+                        "buttonTextColor": "@textColor"
+                    }
+                },
+                "light": {
+                    "title": "Light",
+                    "variables": {
+                        "darkTheme": "false",
+                        "materialLightColor": "",
+                        "baseColor": "#FFFFFF",
+                        "materialDarkColor": "#303F9F",
+                        "materialColor": "#3F51B5",
+                        "accentColor": "#ff4081",
+                        "windowBorderColor": "@materialDarkColor",
+                        "tooltipBgColor": "#616161",
+                        "secondaryColor": "#fcfcfc",
+                        "tertiaryColor": "#e6e6e6",
+                        "hotlinkColor": "",
+                        "hoverBgColor": "#f2f2f2",
+                        "contrastColor": "#c8c8c8",
+                        "borderColor": "@tertiaryColor",
+                        "selectedColor": "#e0e0e0",
+                        "disabledColor": "#989898",
+                        "buttonTextColor": "@baseColor"
+                    }
+                }
+            }
+        },
+        {
+            "type": "dropdown",
+            "title": "Size",
+            "variable": "@baseFontSize",
+            "default": "13",
+            "options": {
+                "12": "Small",
+                "13": "Normal",
+                "15": "Large"
+            }
+        }
+    ]
+}
