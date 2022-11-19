@@ -101,12 +101,12 @@
 
 .lvItem.itemNowPlaying[data-selected], .lvItem.itemNowPlaying[data-selected] label, .lvItem[data-selected] .ratingStar, 
 .lvItem[data-selected] .itemNowPlaying, .lvItem[data-selected] .itemNowPlaying label {
-    color: @invertedColor;
-    fill: @invertedColor;
+    color: @ratingInversion;
+    fill:  @ratingInversion;
 }
 
 .lvItem[data-selected] .ratingCanvas[data-hover] .ratingStar, .lvItem.itemNowPlaying[data-selected] .ratingStar, .lvItem[data-selected] .itemNowPlaying .ratingStar {
-    fill: mix(@invertedColor, @warningColor, 90%);
+    fill: @ratingInversionNowPlaying;
 }
 
 .lvItem[data-selected] {

@@ -1,24 +1,77 @@
 {
-    "title": "Material Design",
-    "id": "Material Design",
-    "description": "Default skin based on Material Design.",
+    "title": "Material Colors",
+    "id": "haiMaterialColors",
+    "description": "Skin based on the default Material Design skin that allows for multiple color accent and font choices.",
     "version": "1.0.0",
     "type": "skin",
-    "author": "Ventis Media, Inc.",
+    "author": "Hawke AI",
     "icon": "thumb.png",
-    "skin_options": [
-        {
+    "skin_options": [{
             "type": "radio",
             "default": "dark",
-            "title": "Theme",
+            "title": "Base Theme",
             "options": {
                 "dark": {
                     "title": "Dark",
                     "variables": {
                         "darkTheme": "true",
+                        "buttonTextColor": "@textColor"
+                    }
+                },
+                "light": {
+                    "title": "Light",
+                    "variables": {
+                        "darkTheme": "false",
+                        "baseColor": "#FFFFFF",
+                        "windowBorderColor": "#303030",
+                        "borderColor": "@tertiaryColor",
+                        "buttonTextColor": "@baseColor",
+                        "tooltipBgColor": "#616161",
+                        "secondaryColor": "#fcfcfc",
+                        "tertiaryColor": "#e6e6e6",
+                        "hoverBgColor": "#f2f2f2",
+                        "contrastColor": "#c8c8c8",
+                        "selectedColor": "#e0e0e0",
+                        "disabledColor": "#989898",
+                        "ratingInversion": "#424242",
+                        "ratingInversionNowPlaying": "@ratingInversion"
+                    }
+                }
+            }
+        },
+        {
+            "type": "radio",
+            "default": "blue",
+            "title": "Color Accent",
+            "options": {
+                "blue": {
+                    "title": "Blue",
+                    "variables": {
+                        "materialLightColor": "#3377FF",
+                        "materialDarkColor": "#303F9F",
+                        "materialColor": "#3F51B5",
+                        "accentColor": "#3377FF",
+                        "highlightBgColor": "#3377FF",
+                        "progressBarColor": "@materialLightColor"
+                    }
+                },
+                "gray": {
+                    "title": "Gray",
+                    "variables": {
+                        "materialLightColor": "#cccccc",
+                        "materialDarkColor": "#222222",
+                        "materialColor": "#777777",
+                        "accentColor": "@materialLightColor",
+                        "hotlinkColor": "@accentColor"
+                    }
+                },
+                "green": {
+                    "title": "Green",
+                    "variables": {
+                        "darkTheme": "",
                         "baseColor": "",
-                        "materialDarkColor": "",
                         "materialLightColor": "",
+                        "materialDarkColor": "",
                         "materialColor": "",
                         "accentColor": "",
                         "windowBorderColor": "",
@@ -31,29 +84,55 @@
                         "borderColor": "",
                         "selectedColor": "",
                         "disabledColor": "",
-                        "buttonTextColor": "@textColor"
+                        "buttonTextColor": ""
                     }
                 },
-                "light": {
-                    "title": "Light",
+                "orange": {
+                    "title": "Orange",
+                    "variables": {}
+                },
+                "purple": {
+                    "title": "Purple",
                     "variables": {
-                        "darkTheme": "false",
+                        "darkTheme": "",
+                        "baseColor": "",
                         "materialLightColor": "",
-                        "baseColor": "#FFFFFF",
-                        "materialDarkColor": "#303F9F",
-                        "materialColor": "#3F51B5",
-                        "accentColor": "#ff4081",
-                        "windowBorderColor": "@materialDarkColor",
-                        "tooltipBgColor": "#616161",
-                        "secondaryColor": "#fcfcfc",
-                        "tertiaryColor": "#e6e6e6",
+                        "materialDarkColor": "",
+                        "materialColor": "",
+                        "accentColor": "",
+                        "windowBorderColor": "",
+                        "tooltipBgColor": "",
+                        "secondaryColor": "",
+                        "tertiaryColor": "",
                         "hotlinkColor": "",
-                        "hoverBgColor": "#f2f2f2",
-                        "contrastColor": "#c8c8c8",
-                        "borderColor": "@tertiaryColor",
-                        "selectedColor": "#e0e0e0",
-                        "disabledColor": "#989898",
-                        "buttonTextColor": "@baseColor"
+                        "hoverBgColor": "",
+                        "contrastColor": "",
+                        "borderColor": "",
+                        "selectedColor": "",
+                        "disabledColor": "",
+                        "buttonTextColor": ""
+                    }
+                },
+                "red": {
+                    "title": "Red",
+                    "variables": {
+                        "darkTheme": "",
+                        "baseColor": "",
+                        "materialLightColor": "",
+                        "materialDarkColor": "",
+                        "materialColor": "",
+                        "accentColor": "",
+                        "windowBorderColor": "",
+                        "tooltipBgColor": "",
+                        "secondaryColor": "",
+                        "tertiaryColor": "",
+                        "hotlinkColor": "",
+                        "hoverBgColor": "",
+                        "contrastColor": "",
+                        "borderColor": "",
+                        "selectedColor": "",
+                        "disabledColor": "",
+                        "buttonTextColor": ""
                     }
                 }
             }
