@@ -52,7 +52,7 @@
                         "materialColor": "#3F51B5",
                         "accentColor": "#3377FF",
                         "highlightBgColor": "#3377FF",
-                        "progressBarColor": "@materialLightColor"
+                        "progressBarColor": "@materialDarkColor"
                     }
                 },
                 "gray": {
@@ -67,25 +67,7 @@
                 },
                 "green": {
                     "title": "Green",
-                    "variables": {
-                        "darkTheme": "",
-                        "baseColor": "",
-                        "materialLightColor": "",
-                        "materialDarkColor": "",
-                        "materialColor": "",
-                        "accentColor": "",
-                        "windowBorderColor": "",
-                        "tooltipBgColor": "",
-                        "secondaryColor": "",
-                        "tertiaryColor": "",
-                        "hotlinkColor": "",
-                        "hoverBgColor": "",
-                        "contrastColor": "",
-                        "borderColor": "",
-                        "selectedColor": "",
-                        "disabledColor": "",
-                        "buttonTextColor": ""
-                    }
+                    "variables": {}
                 },
                 "orange": {
                     "title": "Orange",
@@ -93,53 +75,28 @@
                 },
                 "purple": {
                     "title": "Purple",
-                    "variables": {
-                        "darkTheme": "",
-                        "baseColor": "",
-                        "materialLightColor": "",
-                        "materialDarkColor": "",
-                        "materialColor": "",
-                        "accentColor": "",
-                        "windowBorderColor": "",
-                        "tooltipBgColor": "",
-                        "secondaryColor": "",
-                        "tertiaryColor": "",
-                        "hotlinkColor": "",
-                        "hoverBgColor": "",
-                        "contrastColor": "",
-                        "borderColor": "",
-                        "selectedColor": "",
-                        "disabledColor": "",
-                        "buttonTextColor": ""
-                    }
+                    "variables": {}
                 },
                 "red": {
                     "title": "Red",
-                    "variables": {
-                        "darkTheme": "",
-                        "baseColor": "",
-                        "materialLightColor": "",
-                        "materialDarkColor": "",
-                        "materialColor": "",
-                        "accentColor": "",
-                        "windowBorderColor": "",
-                        "tooltipBgColor": "",
-                        "secondaryColor": "",
-                        "tertiaryColor": "",
-                        "hotlinkColor": "",
-                        "hoverBgColor": "",
-                        "contrastColor": "",
-                        "borderColor": "",
-                        "selectedColor": "",
-                        "disabledColor": "",
-                        "buttonTextColor": ""
-                    }
+                    "variables": {}
                 }
             }
         },
         {
             "type": "dropdown",
-            "title": "Size",
+            "title": "Font Face",
+            "variable": "@selectedFont",
+            "default": "Roboto",
+            "options": {
+                "RobotoSerif": "Serif",
+                "Roboto": "Sans-Serif",
+                "RobotoMono": "Monospaced"
+            }
+        },
+        {
+            "type": "dropdown",
+            "title": "Font Size",
             "variable": "@baseFontSize",
             "default": "13",
             "options": {

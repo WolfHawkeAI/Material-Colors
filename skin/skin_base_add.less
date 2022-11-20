@@ -47,6 +47,18 @@
 @font-face { font-family: Roboto; src: url("/skin/fonts/Roboto-Bold.ttf"); font-weight: bold; }
 @font-face { font-family: Roboto; src: url("/skin/fonts/Roboto-Italic.ttf"); font-style: italic; }
 
+@font-face { font-family: RobotoSerif; src: url("/skin/fonts/RobotoSerif-Regular.ttf"); }
+@font-face { font-family: RobotoSerif; src: url("/skin/fonts/RobotoSerif-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: RobotoSerif; src: url("/skin/fonts/RobotoSerif-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: RobotoSerif; src: url("/skin/fonts/RobotoSerif-Italic.ttf"); font-style: italic; }
+
+@font-face { font-family: RobotoMono; src: url("/skin/fonts/RobotoMono-Regular.ttf"); }
+@font-face { font-family: RobotoMono; src: url("/skin/fonts/RobotoMono-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: RobotoMono; src: url("/skin/fonts/RobotoMono-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: RobotoMono; src: url("/skin/fonts/RobotoMono-Italic.ttf"); font-style: italic; }
+
+@selectedFont: Roboto;
+
 // colors used for selection icons
 @selectedBgColor: @tertiaryColor;
 @selectedBgColorR: fade(@selectedBgColor, 85%); // for rows
@@ -56,7 +68,7 @@
 @buttonTextColor: @textColor;
 
 body {
-    font-family: Roboto;
+    font-family: @selectedFont;
 }
 
 .sidePanel {
