@@ -60,9 +60,11 @@
                     "variables": {
                         "materialLightColor": "#cccccc",
                         "materialDarkColor": "#222222",
-                        "materialColor": "#777777",
-                        "accentColor": "@materialLightColor",
-                        "hotlinkColor": "@accentColor"
+                        "materialColor": "#555555",
+                        "accentColor": "#fb8c00",
+                        "hotlinkColor": "@materialLightColor",
+                        "ratingInversion": "@materialDarkColor",
+                        "ratingInversionNowPlaying": "@ratingInversion"
                     }
                 },
                 "green": {
