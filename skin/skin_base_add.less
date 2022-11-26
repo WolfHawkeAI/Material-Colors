@@ -37,10 +37,11 @@
 @invertedColor: white;
 @invertedSecondaryColor: #b0b0b0;
 @shadowColor: @hoverBgColor;
-@ratingStar: @textColor;
-@ratingStarNowPlaying: @warningColor;
+/* these are so that we can mess with the rating star icons directly */
+@ratingStar: @textColor; 
+@ratingStarNowPlaying: @warningColor; 
 @ratingInversion: @invertedColor;
-@ratingInversionNowPlaying: mix(@invertedColor, @warningColor, 90%);
+@ratingInversionNowPlaying: mix(@invertedColor, @ratingStarNowPlaying, 90%);
 
 @windowHeaderHeight: @baseIconSize + (2 * @toolButtonPadding);
 
