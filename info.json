@@ -68,7 +68,7 @@
                         "accentColor": "#fb8c00",
                         "ratingInversion": "@textColor",
                         "ratingInversionNowPlaying": "@accentColor",
-                        "warningColor": "@textColor"
+                        "ratingStarNowPlaying": "@accentColor"
                     }
                 },
                 "green": {
