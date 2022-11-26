@@ -24,7 +24,8 @@
                         "darkTheme": "false",
                         "baseColor": "#FFFFFF",
                         "windowBorderColor": "#303030",
-                        "borderColor": "@tertiaryColor",
+                        "dividerColor": "@windowBorderColor",
+                        "borderColor": "@windowBorderColor",
                         "buttonTextColor": "@baseColor",
                         "tooltipBgColor": "#616161",
                         "secondaryColor": "#fcfcfc",
@@ -33,8 +34,9 @@
                         "contrastColor": "#c8c8c8",
                         "selectedColor": "#e0e0e0",
                         "disabledColor": "#989898",
-                        "ratingInversion": "#424242",
-                        "ratingInversionNowPlaying": "@ratingInversion"
+                        "ratingInversion": "@materialDarkColor",
+                        "ratingInversionNowPlaying": "@ratingInversion",
+                        "accentColor": "@materialDarkColor"
                     }
                 }
             }
@@ -61,10 +63,12 @@
                         "materialLightColor": "#cccccc",
                         "materialDarkColor": "#222222",
                         "materialColor": "#555555",
-                        "accentColor": "#fb8c00",
+                        "contrastColor": "#fcfcfc",
                         "hotlinkColor": "@materialLightColor",
-                        "ratingInversion": "@materialDarkColor",
-                        "ratingInversionNowPlaying": "@ratingInversion"
+                        "accentColor": "#fb8c00",
+                        "ratingInversion": "@textColor",
+                        "ratingInversionNowPlaying": "@accentColor",
+                        "warningColor": "@textColor"
                     }
                 },
                 "green": {
