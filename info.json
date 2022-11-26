@@ -24,8 +24,6 @@
                         "darkTheme": "false",
                         "baseColor": "#FFFFFF",
                         "windowBorderColor": "#303030",
-                        "dividerColor": "@windowBorderColor",
-                        "borderColor": "@windowBorderColor",
                         "buttonTextColor": "@baseColor",
                         "tooltipBgColor": "#616161",
                         "secondaryColor": "#fcfcfc",
@@ -54,7 +52,9 @@
                         "materialColor": "#3F51B5",
                         "accentColor": "#3377FF",
                         "highlightBgColor": "#3377FF",
-                        "progressBarColor": "@materialDarkColor"
+                        "progressBarColor": "@materialDarkColor",
+                        "ratingInversionNowPlaying": "@accentColor",
+                        "ratingStarNowPlaying": "@accentColor"
                     }
                 },
                 "gray": {
@@ -63,7 +63,6 @@
                         "materialLightColor": "#cccccc",
                         "materialDarkColor": "#222222",
                         "materialColor": "#555555",
-                        "contrastColor": "#fcfcfc",
                         "hotlinkColor": "@materialLightColor",
                         "accentColor": "#fb8c00",
                         "ratingInversion": "@textColor",
