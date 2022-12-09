@@ -47,12 +47,13 @@
                 "blue": {
                     "title": "Blue",
                     "variables": {
-                        "materialLightColor": "#3377FF",
-                        "materialDarkColor": "#303F9F",
-                        "materialColor": "#3F51B5",
-                        "accentColor": "#3377FF",
-                        "highlightBgColor": "#3377FF",
-                        "progressBarColor": "@materialDarkColor",
+                        "materialColor": "#003399",
+                        "materialDarkColor": "#000066",
+                        "materialLightColor": "#3265c9",
+                        "accentColor": "#3265c9",
+                        "hotlinkColor": "@materialLightColor",
+                        "highlightBgColor": "@accentColor",
+                        "progressBarColor": "@materialLightColor",
                         "ratingInversionNowPlaying": "@accentColor",
                         "ratingStarNowPlaying": "@accentColor"
                     }
@@ -60,11 +61,11 @@
                 "gray": {
                     "title": "Gray",
                     "variables": {
-                        "materialLightColor": "#cccccc",
-                        "materialDarkColor": "#222222",
                         "materialColor": "#555555",
-                        "hotlinkColor": "@materialLightColor",
+                        "materialDarkColor": "#222222",
+                        "materialLightColor": "#cccccc",
                         "accentColor": "#fb8c00",
+                        "hotlinkColor": "@materialLightColor",
                         "ratingInversion": "@textColor",
                         "ratingInversionNowPlaying": "@accentColor",
                         "ratingStarNowPlaying": "@accentColor"
@@ -72,7 +73,17 @@
                 },
                 "green": {
                     "title": "Green",
-                    "variables": {}
+                    "variables": {
+                        "materialColor": "#009933",
+                        "materialDarkColor": "#006633",
+                        "materialLightColor": "#00C742",
+                        "accentColor": "#00C742",
+                        "hotlinkColor": "@accentColor",
+                        "highlightBgColor": "@accentColor",
+                        "progressBarColor": "@materialLightColor",
+                        "ratingInversionNowPlaying": "@accentColor",
+                        "ratingStarNowPlaying": "@accentColor"
+                    }
                 },
                 "orange": {
                     "title": "Orange",
@@ -80,11 +91,31 @@
                 },
                 "purple": {
                     "title": "Purple",
-                    "variables": {}
+                    "variables": {
+                        "materialColor": "#663399",
+                        "materialDarkColor": "#330066",
+                        "materialLightColor": "#9966ff",
+                        "accentColor": "#9966ff",
+                        "hotlinkColor": "@accentColor",
+                        "highlightBgColor": "@accentColor",
+                        "progressBarColor": "@materialLightColor",
+                        "ratingInversionNowPlaying": "@accentColor",
+                        "ratingStarNowPlaying": "@accentColor"
+                    }
                 },
                 "red": {
                     "title": "Red",
-                    "variables": {}
+                    "variables": {
+                        "materialColor": "#CC3300",
+                        "materialDarkColor": "#990000",
+                        "materialLightColor": "#ff0000",
+                        "accentColor": "#ff0000",
+                        "hotlinkColor": "@accentColor",
+                        "highlightBgColor": "@accentColor",
+                        "progressBarColor": "@materialDarkColor",
+                        "ratingInversionNowPlaying": "@accentColor",
+                        "ratingStarNowPlaying": "@accentColor"
+                    }
                 }
             }
         },
